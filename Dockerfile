@@ -1,6 +1,6 @@
-FROM resin/raspberrypi2-alpine-python:latest  
+FROM resin/raspberrypi2-alpine:latest  
 # Enable OpenRC
-ENV INITSYSTEM on  
+#ENV INITSYSTEM on  
 
 RUN apk update &&  apk add --update bash curl wget docker-registry
 ADD ./config.yml /etc/docker-registry/config.yml
